@@ -33,4 +33,29 @@
     text-align: center;
     padding: 20px;
   }
- 
+
+  
+  .navbar ul a::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    height: 100%;
+    border: 1px solid rgb(138, 120, 120);
+    width: 10px;
+    background-color: black;
+    transform: rotate(0deg) skewY(-45deg);
+    box-shadow: -9px 0px 0px  rgb(168, 160, 160);
+  }
+  .navbar ul a::after {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: -5px;
+    height: 10px;
+    width: 100%;
+    background-color: black;
+    transform: rotate(0deg) skewX(-45deg);
+    box-shadow: 0px 10px 0px  rgb(168, 160, 160);
+  }
+  
