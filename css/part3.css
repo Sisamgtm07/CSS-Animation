@@ -33,22 +33,26 @@ body {
   transition: 0.5s all ease;
 }
 .wrapper .row .content {
-  padding: 20px 0;
+  padding: 0px 0 20px 0;
 }
+
 .wrapper .row img {
-  max-width: 100%;
+  max-width: 280px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.411);
 }
 
 .wrapper .row .content h2 {
   color: black;
   text-align: center;
   font-weight: 500;
+  padding: 10px 0;
   margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.411);
 }
 
 .wrapper .row .content p {
   font-size: 15px;
-  padding: 0 10px;
+  padding: 0 15px;
   text-align: justify;
 }
 
@@ -65,5 +69,9 @@ body {
 @media screen and (max-width: 880px) {
   .wrapper {
     flex-direction: column;
+  }
+
+  .wrapper .row img {
+    max-width: 100%;
   }
 }
