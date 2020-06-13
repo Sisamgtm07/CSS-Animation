@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  overflow-x: hidden;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      to top left,
+      rgba(7, 1, 0, 0.89),
+      rgba(12, 0, 0, 0.815)
+    ),
+    url("../img/tree.jpg") center no-repeat;
+}
+
+.wrapper {
+  position: absolute;
+  max-width: 840px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+.wrapper img{
+    box-shadow: 10px 10px white;
+  }
+  
+  
+  /*Custom css*/
+  
+  .nav-arrows {
+      display: none;
+  }
+  
+  .nav-arrows a {
+      width: 42px;
+      height: 42px;
+      background: #3a3732 url("../img/nav.png") no-repeat top left;
+      position: absolute;
+      top: 50%;
+      left: 2px;
+      text-indent: -9000px;
+      cursor: pointer;
+      margin-top: -21px;
+      opacity: 0.9;
+      border-radius: 50%;
+      box-shadow: 0 1px 1px rgba(255,255,255,0.8);
+  }
+  
+  .nav-arrows a:first-child{
+      left: auto;
+      right: 2px;
+      background-position: top right;
+  }
+  
+  .nav-arrows a:hover {
+      opacity: 1;
+  }
+  
+  
+  /* Slicebox Style */
+  .sb-slider {
+      margin: 10px auto;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      list-style-type: none;
+    padding: 0;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.466), 
+                1px 1px 0px rgba(0, 0, 0, 0.466),
+                 3px 3px 0px rgba(0, 0, 0, 0.466), 
+                 8px 8px 0px rgba(0, 0, 0, 0.466), 
+                 5px 5px 5px rgba(0, 0, 0, 0.466), 
+                 10px 10px 10px rgba(0, 0, 0, 0.658);
+  }
+  
+  .sb-slider li {
+      margin: 0;
+      padding: 0;
+      display: none;
+  }
+  
+  .sb-slider li > a {
+      outline: none;
+  }
+  
+  .sb-slider li > a img {
+      border: none;
+  }
+  
+  .sb-slider img {
+      max-width: 100%;
+      display: block;
+  }
+  
+  
+  .sb-perspective {
+      position: relative;
+  }
+  
+  .sb-perspective > div {
+      position: absolute;
+  
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -o-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+  
+      -webkit-backface-visibility : hidden;
+      -moz-backface-visibility : hidden;
+      -o-backface-visibility : hidden;
+      -ms-backface-visibility : hidden;
+      backface-visibility : hidden;
+  }
+  
+  .sb-side {
+      margin: 0;
+      display: block;
+      position: absolute;
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -o-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+  }
+  
+  
+  
